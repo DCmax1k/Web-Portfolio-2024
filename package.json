@@ -1,0 +1,23 @@
+{
+  "name": "web-portfolio-2024",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "Dylan Caldwell",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.8",
+    "sitemap": "^7.1.1",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
