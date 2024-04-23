@@ -1,98 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); /*  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* font-family: "Poppins", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap'); /* font-family: "Roboto Mono", monospace; */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Kodchasan", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
 html {
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
+  scroll-behavior: smooth;
 }
 
-.Index {
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    width: 100vw;
-    height: 100vh;
+body {
+  overflow-x: hidden;
+  background-color: #080707;
 }
 
-#section1 {
-    height: 100vh;
-    width: 100vw;
+#landing {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
-#section1 > .half {
-    height: 50%;
-    width: 100%;
+#landing > #bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
-.topHalf {
-    background-color: #232323;
+#landing > .title {
+  position: absolute;
+  top: 30vh;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  line-height: 18vh;
 }
-.bottomHalf {
-    background-color: #454545;
+#landing > .title > .name {
+  font-size: 15vh;
+}
+#landing > .title > .subTitle {
+  font-size: 2vh;
+  margin-top: -3vh;
+  letter-spacing: 0.5vh;
+}
+#landing > .topLeft {
+  color: white;
+  position: absolute;
+  top: 3vh;
+  left: 2vh;
+  font-size: 1.4vh;
+}
+#landing > .links {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30vw;
+}
+#landing > .links > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4vh;
+  position: relative;
+}
+#landing > .links > a > .bit {
+  position: absolute;
+  right: 0;
+  top: -0.8vh;
+  color: grey;
+  font-size: 0.8vh;
+  font-family: "Roboto Mono", monospace;
 }
 
-#section1 > .name {
-    position: absolute;
-    text-align: center;
-    font-size: 13vh;
-    letter-spacing: 2.2vh;
-    font-weight: 700;
-    top: 49%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 15vh;
-}
-#section1 > .name > .darkLightShadow {
-    color: #232323;
-    text-shadow: 0.5vh -0.5vh #454545;
-}
-#section1 > .name > .lightDarkShadow {
-    color: #454545;
-    text-shadow: -0.5vh 0.5vh #232323;
+#expertise {
+  height: 100vh;
+  width: 100vw;
 }
 
-#section1 > .scroll {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 3vh;
-    font-weight: 700;
-    letter-spacing: 0.5vh;
-    color: #454545;
-    text-shadow: -0.2vh 0.2vh #232323;
-}
-#section1 > .scroll > img {
-    position: absolute;
-    bottom: -4vh;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: floatAnimation 2s infinite ease-in-out;
+#landing > .scroll {
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes floatAnimation {
-    0%, 100% {
-      transform: translate(-50%, 0);
-    }
-    50% {
-      transform: translate(-50%, 2vh);
-    }
+#landing > .scroll > .dot {
+  content: '';
+  height: 0.5vh;
+  width: 0.5vh;
+  background-color: #CCCCCC;
+  border-radius: 50%;
+}
+#landing > .scroll > .before {
+  animation: bounceDown 3s ease infinite;
+  margin-top: 0.7vh;
+}
+#landing > .scroll > .after {
+  animation: bounceDown 3s ease infinite 0.2s;
+  margin-top: 0.7vh;
+}
+#landing > .scroll > img {
+  animation: bounceDown 3s forwards infinite 0.4s;
+  margin-top: 0.7vh;
 }
 
-#backgroundSection {
-    position: relative;
-    width: 100vw;
-}
-#backgroundSection > .background {
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+
+@keyframes bounceDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 
@@ -102,7 +134,7 @@ html {
     height: 1.2vh;
   }
   *::-webkit-scrollbar-track {
-    background-color: #232323; 
+    background-color: #080707;
     cursor: pointer;
   }
   *::-webkit-scrollbar-thumb {

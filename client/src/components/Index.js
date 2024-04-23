@@ -11,69 +11,46 @@ class Index extends Component {
     }
 
 
-    switchPage() {
-        this.setState({
-            login: !this.state.login,
-        });
-    }
-
     render() {
         return (
             <div className='Index'>
-                <div id='section1'>
-                    <div className='name'>
-                        <span className='darkLightShadow'>Dylan</span>
-                        <br />
-                        <span className='lightDarkShadow'>Caldwell</span>
-                    </div>
-                    <div className='topHalf half'>
+                {/* LANDING */}
+                <div id="landing">
+                    <img id='bg' alt='background' src='/images/renderedBgSpot.png' />
 
+                    <div className='topLeft'>
+                        <h2 className='domain'>DigitalCaldwell</h2>
                     </div>
-                    <div className='bottomHalf half'>
 
+                    <div className='links'>
+                        <a href='#landing'>home<span className='bit'>000</span></a>
+                        <a href='#expertise'>expertise<span className='bit'>001</span></a>
+                        <a href='#work'>work<span className='bit'>010</span></a>
+                        <a href='#experience'>experience<span className='bit'>011</span></a>
+                        <a href='#contact'>contact<span className='bit'>100</span></a>
+                    </div>
+
+                    <div className='title'>
+                        <h1 className='name'>
+                            DYLAN
+                            <br />
+                            CALDWELL
+                        </h1>
+                        <h3 className='subTitle'>
+                            COMPUTER ENGINEER, FULL STACK WEB DEVELOPER.
+                        </h3>
                     </div>
 
                     <div className='scroll'>
-                        Scroll
-                        <img src='/images/scrollArrow.svg' alt='scroll arrow' />
+                        <div className='before dot'></div>
+                        <div className='after dot'></div>
+                        <img alt='scroll' src='/images/scrollArrow.svg' />
                     </div>
                 </div>
-                <div id='backgroundSection'>
-                    <img className='background' src='/images/background.svg'alt='background' />
-                    test
-                    <br />
-                    test
-                    <br />
-                    test
-                    <br />
-                    test
-                    <br />
-                    test
-                    <br />
-                    test
-                    <br />
-                    test
-                    <br />
-                    test
-                    <br />
-                    test
-                    <br />
-                    test
-                    <br />
-                    test
-                    <br />
-                    test
-                    <br />
-                    test
-                    <br />
-                    test
-                    <br />
-                    test
-                    <br />
-                    test
-                    <br />
-                    test
-                    <br />
+
+                {/* EXPERTISE */}
+                <div id='expertise'>
+
                 </div>
             </div>
         )
