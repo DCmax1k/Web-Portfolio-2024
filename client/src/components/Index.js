@@ -16,7 +16,7 @@ class Index extends Component {
             <div className='Index'>
                 {/* LANDING */}
                 <div id="landing">
-                    <img id='bg' alt='background' src='/images/renderedBgSpot.png' />
+                    <img id='bg' alt='background' src='/images/renderedBgBright.png' />
 
                     <div className='topLeft'>
                         <h2 className='domain'>DigitalCaldwell</h2>
