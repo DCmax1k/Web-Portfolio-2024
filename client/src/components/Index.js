@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Links from './Links';
+
 import sendData from './util/sendData';
 
 class Index extends Component {
@@ -14,7 +16,7 @@ class Index extends Component {
 
     componentDidMount() {
         const img = new Image();
-        img.src = '/images/renderedBgBright.png';
+        img.src = '/images/renderedBg.png';
         img.onload = () => {
             this.setState({ imgLoaded: true });
         };
@@ -52,20 +54,14 @@ class Index extends Component {
 
                 {/* LANDING */}
                 <div id="landing">
-                    <img className={this.state.imgLoaded?'active':''} id='bg' alt='background' src='/images/renderedBgBright.png' />
+                    <img className={this.state.imgLoaded?'active':''} id='bg' alt='background' src='/images/renderedBg.png' />
 
                     <div className='topLeft'>
                         <img onClick={this.toggleSideBar} className='hamMenu' alt='Side bar open' src='/images/hamMenu.svg' />
                         <h2 className='domain'>DigitalCaldwell</h2>
                     </div>
 
-                    <div className='links'>
-                        <a href='#landing'>home<span className='bit'>000</span></a>
-                        <a href='#expertise'>expertise<span className='bit'>001</span></a>
-                        <a href='#work'>work<span className='bit'>010</span></a>
-                        <a href='#experience'>experience<span className='bit'>011</span></a>
-                        <a href='#contact'>contact<span className='bit'>100</span></a>
-                    </div>
+                    <Links />
 
                     <div className='title'>
                         <h1 className='name'>
@@ -87,6 +83,10 @@ class Index extends Component {
 
                 {/* EXPERTISE */}
                 <div id='expertise'>
+
+                    <h1 className='heading'>
+                        My Expertise
+                    </h1>
 
                 </div>
             </div>

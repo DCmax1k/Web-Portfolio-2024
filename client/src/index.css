@@ -14,7 +14,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: #0b0a0b;
+  background-color: #181818;
 }
 #sideBar {
   display: none;
@@ -70,6 +70,7 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  pointer-events: none;
 }
 #landing > #bg.active {
   opacity: 1;
@@ -210,6 +211,18 @@ body {
     font-size: 15vw;
     line-height: 20vw;
   }
+}
+
+/* My Expertise */
+
+
+
+#expertise > .heading {
+  color: white;
+  font-size: 8vh;
+  width: 100%;
+  text-align: center;
+  margin-top: 15vh;
 }
 
 
