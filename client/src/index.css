@@ -134,11 +134,6 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 
-#expertise {
-  height: 100vh;
-  width: 100vw;
-}
-
 #landing > .scroll {
   position: absolute;
   bottom: 20vh;
@@ -214,8 +209,11 @@ body {
 }
 
 /* My Expertise */
-
-
+#expertise {
+  padding-bottom: 5vh;
+  min-height: 80vh;
+  width: 100vw;
+}
 
 #expertise > .heading {
   color: white;
@@ -223,6 +221,109 @@ body {
   width: 100%;
   text-align: center;
   margin-top: 15vh;
+}
+
+#expertise > .skills {
+  margin-top: 10vh;
+  width: 100%;
+  padding: 0 3vh;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+#expertise > .skills > .skill {
+  border: 2px solid #a3a3a3;
+}
+
+#expertise > .skills > .square {
+  height: 33vh;
+  width: 36vh;
+  flex:0 0 36vh;
+  padding: 4vh 3vh;
+  position: relative;
+}
+
+#expertise > .skills > .skill > .header {
+  display: flex;
+  align-items: flex-start;
+}
+#expertise > .skills > .skill > .header > img {
+  height: 4vh;
+}
+#expertise > .skills > .skill > .header > .title {
+  font-size: 2.8vh;
+  margin-left: 2vh;
+  line-height: 3.5vh;
+  position: relative;
+  height: 7vh;
+}
+#expertise > .skills > .skill > .header > .title > .design {
+  position: absolute;
+  top: 2.2vh;
+  left: 0;
+  height: 1vh;
+  z-index: -1;
+}
+#expertise > .skills > .skill > .bottom {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.8vh;
+}
+#expertise > .skills > .skill > .bottom > p {
+  color: #54595f;
+}
+#expertise > .skills > .skill > .bottom > p > p {
+  color: white;
+  margin-top: 0.6vh;
+  margin-bottom: 1vh;
+  margin-left: 2vh;
+  padding-left: 2vh;
+  border-left: 2px solid #54595f;
+}
+
+#expertise > .skills > .quote {
+  display: none;
+  padding-left: 6vh;
+  position: relative;
+}
+#expertise > .skills > .quote > h2 {
+  font-size: 2.5vh;
+  margin-top: 2vh;
+}
+#expertise > .skills > .quote > p {
+  color: #a6a6a6;
+  font-size: 1.6vh;
+  margin-top: 2vh;
+}
+#expertise > .skills > .quote > .design {
+  position: absolute;
+  top: 50%;
+  width: 1vh;
+  height: 70%;
+  transform: translateY(-50%);
+  left: 3vh;
+  background-color: #b7f;
+}
+@media screen and (max-width: 850px) {
+  #expertise > .skills {
+    flex-flow: row wrap;
+  }
+  #expertise > .skills > .square {
+    flex-basis: 50%;
+  }
+  #expertise > .skills > .quote {
+    display: block;
+  }
+}
+@media screen and (max-width: 550px) {
+  #expertise > .heading {
+    font-size: 5vh;
+  }
+  #expertise > .skills > .square {
+    flex-basis: 100%;
+  }
+  #expertise > .skills > .quote {
+    display: none;
+  }
 }
 
 
