@@ -239,7 +239,7 @@ body {
   height: 33vh;
   width: 36vh;
   flex:0 0 36vh;
-  padding: 4vh 3vh;
+  padding: 2vh 3vh;
   position: relative;
 }
 
@@ -255,7 +255,7 @@ body {
   margin-left: 2vh;
   line-height: 3.5vh;
   position: relative;
-  height: 7vh;
+  height: fit-content;
 }
 #expertise > .skills > .skill > .header > .title > .design {
   position: absolute;
