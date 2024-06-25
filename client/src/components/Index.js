@@ -3,6 +3,7 @@ import Links from './Links';
 
 
 import Skill from './Skill';
+import Project from './Project';
 
 class Index extends Component {
     constructor(props) {
@@ -27,6 +28,27 @@ class Index extends Component {
         this.setState({
             sideBar: !this.state.sideBar,
         });
+    }
+
+    clickedProject(project) {
+        switch (project) {
+            case 'Crew':
+                window.open('https://crew.digitalcaldwell.com', '_blank');
+                break;
+            case 'Keypass Guard':
+                window.open('https://www.keypassguard.com', '_blank');
+                break;
+            case 'Budget Bucks':
+                window.open('https://budgetbucks.digitalcaldwell.com', '_blank');
+                break;
+            case 'Sendjet':
+                window.open('https://github.com/DCmax1k/sendjet-mobile-app', '_blank');
+                break;
+                
+
+            default:
+                break;
+        }
     }
 
 
@@ -83,7 +105,7 @@ class Index extends Component {
                 </div>
 
                 {/* EXPERTISE */}
-                <div id='expertise'>
+                <div id='expertise' className='section'>
 
                     <h1 className='heading'>
                         My Expertise
@@ -105,6 +127,60 @@ class Index extends Component {
                     </div>
 
                 </div>
+
+
+                {/* WORK */}
+                <div id='work' className='section'>
+
+                    <div className='workHeading'>
+                        <h1>
+                            My
+                            <br />
+                            Work
+                        </h1>
+
+                        <p>
+                        Engineer and Server Infrastructure Specialist focused on software development, full stack websites, and servers. I’ve been developing full-stack web and mobile applications since 2019, and look forward to continuing my journey in creating engaging and innovative solutions.
+                        </p>
+                    </div>
+
+                    <div className='projects'>
+
+                        <div className='featuredProject'>
+                            <div className='featuredProjectInfo'>
+                                <h3>
+                                    Featured Project
+                                </h3>
+                                <h2>
+                                    Crew
+                                </h2>
+                                <p>
+                                    Web Development
+                                </p>
+
+                                <div className='viewProjectButton' onClick={() => this.clickedProject('Crew')}>
+                                    View Project
+                                </div>
+                            </div>
+
+                            <Project title={'Crew'} subtitle={'Web Development'} src={'/images/projects/crew.png'} action={this.clickedProject} />
+                            
+                        </div>
+
+                        <Project title={'Keypass Guard'} subtitle={'Web Development'} src={'/images/projects/keypassguard.png'} action={this.clickedProject} />
+                        <Project title={'Budget Bucks'} subtitle={'Web Development'} src={'/images/projects/budgetbucks.png'} action={this.clickedProject} />
+                        <Project title={'Sendjet'} subtitle={'Mobile App'} src={'/images/projects/sendjet.png'} action={this.clickedProject} />
+                        
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
             </div>
         )
     }
