@@ -44,8 +44,24 @@ class Index extends Component {
             case 'Sendjet':
                 window.open('https://github.com/DCmax1k/sendjet-mobile-app', '_blank');
                 break;
+            case 'Socialent':
+                window.open('https://socialent.digitalcaldwell.com', '_blank');
+                break;
                 
 
+            default:
+                break;
+        }
+    }
+
+    openLink(link) {
+        switch (link) {
+            case 'github':
+                window.open('https://www.github.com/DCmax1k', '_blank');
+                break;
+            case 'fiverr':
+                window.open('https://www.fiverr.com/dylancaldwell35', '_blank');
+                break;
             default:
                 break;
         }
@@ -122,8 +138,10 @@ class Index extends Component {
                             </h2>
                             <p>
                             - Michael Jordan
-                            </p>
+                            </p> 
                         </div>
+
+                        <img alt='Background Dummy Code' src='/images/bgCode.png' />
                     </div>
 
                 </div>
@@ -163,13 +181,14 @@ class Index extends Component {
                                 </div>
                             </div>
 
-                            <Project title={'Crew'} subtitle={'Web Development'} src={'/images/projects/crew.png'} action={this.clickedProject} />
+                            <Project title={'Crew'} subtitle={'Web Development - 2024'} src={'/images/projects/crew.png'} action={this.clickedProject} />
                             
                         </div>
 
-                        <Project title={'Keypass Guard'} subtitle={'Web Development'} src={'/images/projects/keypassguard.png'} action={this.clickedProject} />
-                        <Project title={'Budget Bucks'} subtitle={'Web Development'} src={'/images/projects/budgetbucks.png'} action={this.clickedProject} />
-                        <Project title={'Sendjet'} subtitle={'Mobile App'} src={'/images/projects/sendjet.png'} action={this.clickedProject} />
+                        <Project title={'Keypass Guard'} subtitle={'Web Development - 2024'} src={'/images/projects/keypassguard.png'} action={this.clickedProject} />
+                        <Project title={'Budget Bucks'} subtitle={'Web Development - 2023'} src={'/images/projects/budgetbucks.png'} action={this.clickedProject} />
+                        <Project title={'Sendjet'} subtitle={'Mobile App - 2022'} src={'/images/projects/sendjet.png'} action={this.clickedProject} />
+                        <Project title={'Socialent'} subtitle={'Web Development - 2021'} src={'/images/projects/socialent.png'} action={this.clickedProject} />
                         
 
 
@@ -177,6 +196,47 @@ class Index extends Component {
 
 
                 </div>
+
+                <footer id='contact' className='section'>
+                    <div className='footerMessage'>
+                        <h1>
+                            Available for freelance opportunities
+                        </h1>
+                        <p>
+                            Need a top-notch full stack or MERN stack developer to power up your web app?
+                            <br />
+                            Send me an email or contact me via any of the provided links!
+                        </p>
+
+                    </div>
+                    <div className='footerLinks'>
+                        <div className='email'>
+                            dylan@digitalcaldwell.com
+                            <div className='colorDesign'></div>
+                        </div>
+
+                        <div className='contactLinks'>
+                            <div className='link' onClick={() => this.openLink('github')}>
+                                <div className='hoverer'></div>
+                                <img alt='github icon' src='/images/icons/github.svg' />
+                                Github
+                            </div>
+                            <div className='link' onClick={() => this.openLink('fiverr')}>
+                                <div className='hoverer'></div>
+                                <img alt='fiverr icon' src='/images/icons/fiverr.webp' />
+                                Fiverr
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className='copyright'>
+                        © 2024 Dylan Caldwell
+                    </div>
+                    
+
+
+                </footer>
 
 
 
