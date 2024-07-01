@@ -105,15 +105,15 @@ class Index extends Component {
                     </div>
 
                     <div className='cr'>
-                    © 2024. Made by Dylan Caldwell.
+                    © 2024 Made by Dylan Caldwell.
                     <br />
-                    All right reserved.
+                    All rights reserved.
                     </div>
                 </div>
 
                 {/* Fixed Links */}
                 <div id='fixedHeaderBar' className={this.state.fixedHeaderBar ? 'active' : ''}>
-                    <img onClick={this.toggleSideBar} className='hamMenu' alt='Side bar open' src='/images/hamMenu.svg' />
+                    <img onClick={this.toggleSideBar} alt='Side bar open' src='/images/hamMenu.svg' />
                     <Links />
                 </div>
 
@@ -257,7 +257,7 @@ class Index extends Component {
                     </div>
 
                     <div className='copyright'>
-                        © 2024 Dylan Caldwell
+                        © 2024 Made by Dylan Caldwell
                     </div>
                     
 
