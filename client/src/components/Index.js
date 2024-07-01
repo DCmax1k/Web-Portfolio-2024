@@ -11,9 +11,12 @@ class Index extends Component {
         this.state = {
             imgLoaded: false,
             sideBar: false,
+
+            fixedHeaderBar: false,
         }
 
         this.toggleSideBar = this.toggleSideBar.bind(this);
+        this.handleScroll = this.handleScroll.bind(this);
     }
 
     componentDidMount() {
@@ -22,7 +25,24 @@ class Index extends Component {
         img.onload = () => {
             this.setState({ imgLoaded: true });
         };
+
+        window.addEventListener('scroll', this.handleScroll);
     }
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll() {
+        if (window.scrollY > window.innerHeight / 2) {
+            this.setState({
+                fixedHeaderBar: true,
+            })
+        } else {
+            this.setState({
+                fixedHeaderBar: false,
+            })
+        }
+    };
 
     toggleSideBar() {
         this.setState({
@@ -89,6 +109,12 @@ class Index extends Component {
                     <br />
                     All right reserved.
                     </div>
+                </div>
+
+                {/* Fixed Links */}
+                <div id='fixedHeaderBar' className={this.state.fixedHeaderBar ? 'active' : ''}>
+                    <img onClick={this.toggleSideBar} className='hamMenu' alt='Side bar open' src='/images/hamMenu.svg' />
+                    <Links />
                 </div>
 
                 {/* LANDING */}
