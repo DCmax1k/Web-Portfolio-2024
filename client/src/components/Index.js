@@ -44,7 +44,7 @@ class Index extends Component {
         }
     };
 
-    toggleSideBar() {
+    toggleSideBar(blank = '') {
         this.setState({
             sideBar: !this.state.sideBar,
         });
@@ -82,6 +82,9 @@ class Index extends Component {
             case 'fiverr':
                 window.open('https://www.fiverr.com/dylancaldwell35', '_blank');
                 break;
+            case 'linkedin':
+                window.open('https://www.linkedin.com/in/dylan-caldwell-77a412323/', '_blank');
+                break;
             default:
                 break;
         }
@@ -100,7 +103,7 @@ class Index extends Component {
                         <a onClick={this.toggleSideBar} href='#landing'>- home</a>
                         <a onClick={this.toggleSideBar} href='#expertise'>- expertise</a>
                         <a onClick={this.toggleSideBar} href='#work'>- work</a>
-                        <a onClick={this.toggleSideBar} href='#experience'>- experience</a>
+                        <a href='/resume' target='_blank'>- resume</a>
                         <a onClick={this.toggleSideBar} href='#contact'>- contact</a>
                     </div>
 
@@ -184,7 +187,7 @@ class Index extends Component {
                         </h1>
 
                         <p>
-                        Engineer and Server Infrastructure Specialist focused on software development, full stack websites, and servers. I’ve been developing full-stack web and mobile applications since 2019, and look forward to continuing my journey in creating engaging and innovative solutions.
+                        Computer Engineer and Server Infrastructure Specialist focused on software development, full stack websites, and servers. I’ve been developing full-stack web and mobile applications since 2019, and look forward to continuing my journey in creating engaging and innovative solutions.
                         </p>
                     </div>
 
@@ -242,6 +245,11 @@ class Index extends Component {
                         </div>
 
                         <div className='contactLinks'>
+                            <div className='link' onClick={() => this.openLink('linkedin')}>
+                                <div className='hoverer'></div>
+                                <img alt='Linkedin icon' src='/images/icons/linkedin.png' />
+                                Linkedin
+                            </div>
                             <div className='link' onClick={() => this.openLink('github')}>
                                 <div className='hoverer'></div>
                                 <img alt='github icon' src='/images/icons/github.svg' />

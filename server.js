@@ -22,6 +22,10 @@ app.get('/submission', (req, res) => {
     res.sendFile(__dirname + '/client/build/index.html');
 });
 
+app.get('/resume', (req, res) => {
+    res.sendFile(__dirname + '/util/RESUME 2024.pdf');
+});
+
 // Sitemap
 let sitemap;
 app.get('/sitemap.xml', async (req, res) => {
