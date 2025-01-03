@@ -444,7 +444,7 @@ body {
 .featuredProject > .featuredProjectInfo > h2 {
   font-size: 4vh;
   font-weight: 700;
-  margin-bottom: -1vh;
+  margin-bottom: 0vh;
 }
 .featuredProject > .featuredProjectInfo > p {
   font-size: 1.5vh;
@@ -513,8 +513,8 @@ body {
   font-size: 1.5vh;
   letter-spacing: 0.1vh;
 
-  opacity: 0;
-  transform: translateY(50%);
+  opacity: 0.5;
+  transform: translateY(20%);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 .Project > .projectInfo > .projectAction > img {

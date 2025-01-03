@@ -199,10 +199,11 @@ class Index extends Component {
                                     Featured Project
                                 </h3>
                                 <h2>
-                                    Crew
+                                    Keypass Guard
                                 </h2>
                                 <p>
-                                    Web Development
+                                    Password Manager
+            
                                 </p>
 
                                 <div className='viewProjectButton' onClick={() => this.clickedProject('Crew')}>
@@ -210,14 +211,15 @@ class Index extends Component {
                                 </div>
                             </div>
 
-                            <Project title={'Crew'} subtitle={'Web Development - 2024'} src={'/images/projects/crew.png'} action={this.clickedProject} />
+                            
+                            <Project title={'Keypass Guard'} subtitle={'Password Manager - 2024'} src={'/images/projects/keypassguard.png'} action={this.clickedProject} />
                             
                         </div>
 
-                        <Project title={'Keypass Guard'} subtitle={'Web Development - 2024'} src={'/images/projects/keypassguard.png'} action={this.clickedProject} />
-                        <Project title={'Budget Bucks'} subtitle={'Web Development - 2023'} src={'/images/projects/budgetbucks.png'} action={this.clickedProject} />
-                        <Project title={'Sendjet'} subtitle={'Mobile App - 2022'} src={'/images/projects/sendjet.png'} action={this.clickedProject} />
-                        <Project title={'Socialent'} subtitle={'Web Development - 2021'} src={'/images/projects/socialent.png'} action={this.clickedProject} />
+                        <Project title={'Crew'} subtitle={'Schedule Manager - 2024'} src={'/images/projects/crew.png'} action={this.clickedProject} />
+                        <Project title={'Budget Bucks'} subtitle={'Budgeting App - 2023'} src={'/images/projects/budgetbucks.png'} action={this.clickedProject} />
+                        <Project title={'Sendjet'} subtitle={'Social App - 2022'} src={'/images/projects/sendjet.png'} action={this.clickedProject} />
+                        <Project title={'Socialent'} subtitle={'Social Media - 2021'} src={'/images/projects/socialent.png'} action={this.clickedProject} />
                         
 
 
