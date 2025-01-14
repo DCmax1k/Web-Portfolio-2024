@@ -23,8 +23,7 @@ app.get('/submission', (req, res) => {
 });
 
 app.get('/resume', (req, res) => {
-    //res.sendFile(__dirname + '/util/RESUME 2024.pdf');
-    res.sendFile(__dirname + '/util/Caldwell, Dylan - RESUME 2024.pdf');
+    res.sendFile(__dirname + '/util/Caldwell, Dylan - RESUME 2025.pdf');
 });
 
 // Sitemap
