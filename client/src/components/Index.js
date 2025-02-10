@@ -206,7 +206,7 @@ class Index extends Component {
             
                                 </p>
 
-                                <div className='viewProjectButton' onClick={() => this.clickedProject('Crew')}>
+                                <div className='viewProjectButton' onClick={() => this.clickedProject('Keypass Guard')}>
                                     View Project
                                 </div>
                             </div>
