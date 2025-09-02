@@ -5,6 +5,8 @@ import Links from './Links';
 import Skill from './Skill';
 import Project from './Project';
 
+import resumePDF from '../assets/resume.pdf';
+
 class Index extends Component {
     constructor(props) {
         super(props);
@@ -66,7 +68,10 @@ class Index extends Component {
                 break;
             case 'Socialent':
                 window.open('https://socialent.digitalcaldwell.com', '_blank');
-                break;
+                break; 
+            case 'Pumped Workouts':
+                window.open('https://github.com/DCmax1k/workout_app', '_blank');
+                break; 
                 
 
             default:
@@ -103,7 +108,8 @@ class Index extends Component {
                         <a onClick={this.toggleSideBar} href='#landing'>- home</a>
                         <a onClick={this.toggleSideBar} href='#expertise'>- expertise</a>
                         <a onClick={this.toggleSideBar} href='#work'>- work</a>
-                        <a href='/resume' target='_blank'>- resume</a>
+                        {/* <a  href='/resume' target='_blank'>- resume</a> */}
+                        <a href={resumePDF} target='_blank' rel="noopener noreferrer" >- resume</a>
                         <a onClick={this.toggleSideBar} href='#contact'>- contact</a>
                     </div>
 
@@ -192,6 +198,29 @@ class Index extends Component {
                     </div>
 
                     <div className='projects'>
+
+                        <div className='featuredProject'>
+                            <div className='featuredProjectInfo'>
+                                <h3>
+                                    Current Project
+                                </h3>
+                                <h2>
+                                    Pumped Workouts
+                                </h2>
+                                <p>
+                                    Track your workouts, stay consistent, and crush your fitness goals with smart insights, progress tracking, and personalized guidance.
+            
+                                </p>
+
+                                <div className='viewProjectButton' style={{backgroundColor: "#DB8854"}} onClick={() => this.clickedProject('Pumped Workouts')}>
+                                    View Project
+                                </div>
+                            </div>
+
+                            
+                            <Project title={'Pumped Workouts'} subtitle={'Workout and health app - 2025'} src={'/images/projects/pumpedWorkouts.png'} action={this.clickedProject} />
+                            
+                        </div>
 
                         <div className='featuredProject'>
                             <div className='featuredProjectInfo'>
