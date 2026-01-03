@@ -70,7 +70,7 @@ class Index extends Component {
                 window.open('https://socialent.digitalcaldwell.com', '_blank');
                 break; 
             case 'Pumped Workouts':
-                window.open('https://github.com/DCmax1k/workout_app', '_blank');
+                window.open('https://pumpedup.digitalcaldwell.com/', '_blank');
                 break; 
                 
 
