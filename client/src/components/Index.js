@@ -69,7 +69,7 @@ class Index extends Component {
             case 'Socialent':
                 window.open('https://socialent.digitalcaldwell.com', '_blank');
                 break; 
-            case 'Pumped Workouts':
+            case 'Pumped Up':
                 window.open('https://pumpedup.digitalcaldwell.com/', '_blank');
                 break; 
                 
@@ -213,13 +213,13 @@ class Index extends Component {
             
                                 </p>
 
-                                <div className='viewProjectButton' style={{backgroundColor: "#DB8854"}} onClick={() => this.clickedProject('Pumped Workouts')}>
+                                <div className='viewProjectButton' style={{backgroundColor: "#DB8854"}} onClick={() => this.clickedProject('Pumped Up')}>
                                     View Project
                                 </div>
                             </div>
 
                             
-                            <Project title={'Pumped Workouts'} subtitle={'Workout and health app - 2025'} src={'/images/projects/pumpedWorkouts.png'} action={this.clickedProject} />
+                            <Project title={'Pumped Up'} subtitle={'Workout and Nutrition App - 2025'} src={'/images/projects/pumpedWorkouts.png'} action={this.clickedProject} />
                             
                         </div>
 
