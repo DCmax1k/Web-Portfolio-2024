@@ -163,7 +163,7 @@ class Index extends Component {
                     </h1>
 
                     <div className='skills'>
-                        <Skill title="Full Stack Websites" text="Passionate about UI/UX. Over 5 years of development experience in HTML, CSS, JS, React and Express frameworks." icon="/images/react.svg" designWidth={"14vh"} color={'#DF058D'} />
+                        <Skill title="Full Stack Websites" text="Passionate about UI/UX. Over 7 years of development experience in HTML, CSS, JS, React and Express frameworks." icon="/images/react.svg" designWidth={"14vh"} color={'#DF058D'} />
                         <Skill title="Server Infrastructure Specialist" text="Skilled in Linux server setup, web hosting, 24/7 server management, networking, VPN, streaming services." icon="/images/cubes-solid.svg" designWidth={"10vh"} color={'#2C49D8'} />
                         <Skill title="Software Development" text="Experienced in both functional and OOP: Javascript, Java, Python." icon="/images/desktop-solid.svg" designWidth={"13vh"} color={'#FF6B2B'} />
                         <div className='quote square'>
