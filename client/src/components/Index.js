@@ -205,10 +205,11 @@ class Index extends Component {
                                     Current Project
                                 </h3>
                                 <h2>
-                                    Pumped Workouts
+                                    Pumped Up
                                 </h2>
                                 <p>
-                                    Track your workouts, stay consistent, and crush your fitness goals with smart insights, progress tracking, and personalized guidance.
+                                    {/* Track your workouts, stay consistent, and crush your fitness goals with smart insights, progress tracking, and personalized guidance. */}
+                                    Your all-in-one toolset for achieving your workout and nutrition goals. From tracking your workouts, to easily and quickly tracking your meals by snapping a pic, to being provded scienve insights to help you better understand your health.
             
                                 </p>
 
