@@ -209,7 +209,7 @@ class Index extends Component {
                                 </h2>
                                 <p>
                                     {/* Track your workouts, stay consistent, and crush your fitness goals with smart insights, progress tracking, and personalized guidance. */}
-                                    Your all-in-one toolset for achieving your workout and nutrition goals. From tracking your workouts, to easily and quickly tracking your meals by snapping a pic, to being provded scienve insights to help you better understand your health.
+                                    Your all-in-one toolset for achieving your workout and nutrition goals. From tracking your workouts, to easily and quickly tracking your meals by snapping a pic, to being provided science insights to help you better understand your health.
             
                                 </p>
 
